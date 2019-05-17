@@ -9,11 +9,11 @@ public class MotherScript : MonoBehaviour {
   // Start is called before the first frame update
   void Start() {
     if (baby1 != null) {
-      baby1.AddComponent(typeof(BabyScript));
+      baby1.AddComponent<BabyScript>();
       baby1.GetComponent<BabyScript>().babyName = "Bingo";
     }
     if (baby2 != null) {
-      baby2.AddComponent(typeof(BabyScript));
+      baby2.AddComponent<BabyScript>();
       baby2.GetComponent<BabyScript>().babyName = "Bongo";
     }
   }
